@@ -15,7 +15,7 @@ pipeline {
         }
         stage ('deploy') {
             steps {
-                sh 'cp -r "C:\\Program Files (x86)\\Jenkins\\workspace\\ant again\\dist\\AntExample.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps"'
+                bat 'xcopy/y "C:\\Program Files (x86)\\Jenkins\\workspace\\aarthi\\ant staging\\dist\\AntExample.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5_Tomcat8new\\webapps"'
             }
         }
         
